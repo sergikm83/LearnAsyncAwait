@@ -6,9 +6,12 @@ namespace FunWithCSharpAsync
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Fun with Async ===>");
+            Console.WriteLine(DoWork());
+            Console.WriteLine("Completed");
+            Console.ReadLine();
         }
         static string DoWork()
         {
