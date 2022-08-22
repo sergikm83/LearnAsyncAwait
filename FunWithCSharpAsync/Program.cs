@@ -10,5 +10,10 @@ namespace FunWithCSharpAsync
         {
             Console.WriteLine("Hello World!");
         }
+        static string DoWork()
+        {
+            Thread.Sleep(5000);
+            return "Done with work!";
+        }
     }
 }
